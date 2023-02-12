@@ -90,12 +90,16 @@ fn main() {
     println!("Blockchain {:#?}", blockchain);
 
     println!(
-        "Token balance of Alice: {}",
-        blockchain.get_token_balance("Alice".to_owned())
+        "Token balance of some other string: {}",
+        blockchain.get_token_balance("String".to_owned())
     );
     println!(
-        "Token balance of Bob: {}",
-        blockchain.get_token_balance("Bob".to_owned())
+        "Token balance of Nando: {}",
+        blockchain.get_token_balance("Nando".to_owned())
+    );
+    println!(
+        "Token balance of Clarence: {}",
+        blockchain.get_token_balance("Clarence".to_owned())
     );
 }
 
